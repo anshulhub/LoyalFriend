@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up - LoyalFriends.com</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/626a2e126b.js" crossorigin="anonymous"></script>
+
+<body class="align">
+    <div id="logo">
+        <img src="img/logo.webp" alt="logoimage" srcset="">
+      </div>
+      <div id="name">LoyalFriend</div>
+
+    <div class="grid">
+
+        <form action=" " method="POST" autocomplete="off" class="form login">
+
+            <div class="form__field">
+                <label for="login__username"><i class="fa fa-user"></i><span class="hidden">New Username</span></label>
+                <input id="login__username" type="text" autocomplete="off" name="username" class="form__input" placeholder="Username" required>
+            </div>
+
+            <div class="form__field">
+                <label for="login__number"><i class="fas fa-phone-alt"></i><span class="hidden">Phone Number</span></label>
+                <input id="login__number" type="number" name="number" class="form__input" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form__field">
+                <label for="login__email"><i class="fas fa-envelope-open"></i><span class="hidden">Email ID</span></label>
+                <input id="login__email" type="email" name="email" class="form__input" placeholder="Email ID" required>
+            </div>
+
+            <div class="form__field">
+                <label for="login__password"><i class="fa fa-unlock-alt"></i><span class="hidden">Password</span></label>
+                <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>
+            </div>
+
+            <div class="form__field">
+                <input type="submit" value="Sign Up">
+            </div>
+
+        </form>
+
+        <p class="text--center">Already a Member? <a href="login.html">Sign In</a><br><hr>
+            <p class="text--center try">First Visit? <a id="free" href="signup.html">Try free now!</a><br></p>
+        </p>
+
+    </div>
+
+</body>
+</head>
+
+</html>
