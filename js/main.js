@@ -175,3 +175,8 @@ function bu(){
     moreText.style.display = "inline";
   }
 }
+
+var preloader = document.getElementById("loading");
+function myFunction(){
+  preloader.style.display = 'none';
+};
