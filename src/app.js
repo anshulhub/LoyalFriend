@@ -35,7 +35,16 @@ app.get("/about.html",(req,res) => {
 res.render("about");
 })
 app.get("/breed/german.html",(req,res) => {
-res.render("");
+res.render("breed/german");
+})
+app.get("/breed/labrador.html",(req,res) => {
+res.render("breed/labrador");
+})
+app.get("/organisation/posh.html",(req,res) => {
+res.render("organisation/posh");
+})
+app.get("/organisation/apolo.html",(req,res) => {
+res.render("organisation/apolo");
 })
 
 app.post("/register", async (req,res) => {
@@ -58,11 +67,9 @@ app.post("/register", async (req,res) => {
 })
 
 app.get("/",(req,res) => {
-res.render("login");
+res.send("Something's Missing!!!");
 })
-app.get("/",(req,res) => {
-res.send("Hello Here");
-})
+
 
 
 
