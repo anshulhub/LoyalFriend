@@ -66,6 +66,23 @@ app.post("/register", async (req,res) => {
     }
 })
 
+app.post("/login",async (req,res) => {
+    try{
+        const email = req.body.email;
+        const password=req.body.password;
+        const loginemail = await Register.findOne({email : email});
+        if(loginemail.password === password){
+            res.status(201).render("index");
+        }
+        else{
+            res.send("Invalid details Entered"); 
+        }
+
+    }catch(err){
+         res.status(400).send(err);
+    }
+    })
+
 app.get("/",(req,res) => {
 res.send("Something's Missing!!!");
 })
