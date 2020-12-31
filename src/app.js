@@ -6,6 +6,7 @@ const port = process.env.PORT || 3000;
 const db= require("./db/conn");
 const Register = require("./models/registers")
 const hbs = require("hbs");
+const bcrypt  = require("bcrypt");
 
 
 const static_path= path.join(__dirname,"../public");
@@ -71,7 +72,9 @@ app.post("/login",async (req,res) => {
         const email = req.body.email;
         const password=req.body.password;
         const loginemail = await Register.findOne({email : email});
-        if(loginemail.password === password){
+        const loginpass = await bcrypt.compare(password,loginemail.password);
+
+        if(loginpass){
             res.status(201).render("index");
         }
         else{
