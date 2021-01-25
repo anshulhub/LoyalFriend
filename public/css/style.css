@@ -556,6 +556,11 @@ header {
   bottom: -30px !important;
   position: relative; }
 
+  .owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+    -ms-touch-action: auto;
+        touch-action: auto;
+}
+
 .owl-custom-nav {
   float: right;
   position: relative;

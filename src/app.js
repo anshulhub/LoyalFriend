@@ -23,28 +23,28 @@ app.use(express.urlencoded({extended:false}));
 app.get("/",(req,res) => {
 res.render("login");
 })
-app.get("/login.html",(req,res) => {
+app.get("/login",(req,res) => {
 res.render("login");
 })
-app.get("/register.html",(req,res) => {
+app.get("/register",(req,res) => {
 res.render("register");
 })
-app.get("/index.html",(req,res) => {
+app.get("/index",(req,res) => {
 res.render("index");
 })
-app.get("/about.html",(req,res) => {
+app.get("/about",(req,res) => {
 res.render("about");
 })
-app.get("/breed/german.html",(req,res) => {
+app.get("/breed/german",(req,res) => {
 res.render("breed/german");
 })
-app.get("/breed/labrador.html",(req,res) => {
+app.get("/breed/labrador",(req,res) => {
 res.render("breed/labrador");
 })
-app.get("/organisation/posh.html",(req,res) => {
+app.get("/organisation/posh",(req,res) => {
 res.render("organisation/posh");
 })
-app.get("/organisation/apolo.html",(req,res) => {
+app.get("/organisation/apolo",(req,res) => {
 res.render("organisation/apolo");
 })
 
