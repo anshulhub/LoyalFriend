@@ -18,8 +18,12 @@ const userSchema = new mongoose.Schema({
     password : {
         type : String,
         required : true
+    },
+    date : {
+        type : String,
+        default : Date.now()
     }
-})
+});
 
 //Hashing password
 userSchema.pre("save", async function(next){
