@@ -3,7 +3,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 
 // save using .env
-const MONGODB_URI = "mongodb+srv://anshulhub:anshul98@cluster0.l04us.mongodb.net/loyalRegisteration?retryWrites=true&w=majority"
+const MONGODB_URI = process.env.ATLAS_URI
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/loyalRegisteration",
 {
