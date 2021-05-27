@@ -66,7 +66,9 @@ app.post("/register", async (req, res) => {
 
 
     } catch (error) {
-        res.status(400).send(error);
+        res.render('404page', {
+            errorMsg: "Opps! Data entered not valid, go back to try again..."
+        })
     }
 })
 
@@ -86,7 +88,9 @@ app.post("/login", async (req, res) => {
         }
 
     } catch (err) {
-        res.status(400).send(err);
+        res.render('404page', {
+            errorMsg: "Opps! Login Credentials mismatched, go back to try again..."
+        })
     }
 })
 
