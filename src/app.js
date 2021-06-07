@@ -37,6 +37,9 @@ app.get("/index", (req, res) => {
 app.get("/about", (req, res) => {
     res.render("about");
 })
+app.get("/contact", (req, res) => {
+    res.render("contact");
+})
 app.get("/breed/german", (req, res) => {
     res.render("breed/german");
 })
