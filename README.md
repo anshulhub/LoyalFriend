@@ -2,7 +2,7 @@
 # Loyalfriend - Web Application
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
-The main purpose of this project is to automate the process of serving towards the welfare of the pets by giving the abandoned pets a place  of        shelter to live in, care them with affection through our portal. 
+The main purpose of this project is to automate the process of serving towards the welfare of the pets by giving the abandoned pets a place  of shelter to live in, care them with affection through our portal and over numbers of animals every year and keep our doors open to feed animals in need and offer crucial vetinary care, our rescue need to raise fundraising goal and give vetinary procedure to our numbers of animals this year and even better, if we reach our fundraising goals well be expanding our services to an increased number of animals in our community.
 
 
 
